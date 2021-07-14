@@ -1,0 +1,203 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* ----------------------
+    Banner and button 
+-----------------------*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.banner {
+    display: flex;
+    background-color:#2D25A0 ;
+    
+}
+.banner-info{ 
+    font-size: 64px;
+    margin-left: 8%;
+    padding-right: 7%;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    line-height: 120px;
+}
+
+button {
+    background-color: #E02C6D;
+    margin-bottom: 5%;
+    font-size: 16px;
+    padding: 16px 36px;
+    color: #FFFFFF;
+    position: relative;
+    transform: translateY(-120px);
+}
+i{
+    margin-left: 10px;
+}
+.banner-img img{
+    width: 556px;
+    margin-top: 50px;
+}
+/*--------------------
+         Animation
+    ----------------------- */
+.banner:hover .banner-img{
+    transform: rotate(60deg) scale(50%) rotate(300deg) scale(200%);
+    
+} 
+.banner-img{
+    transition: transform 3s ease-out;
+}   
+
+/*---------------------------------
+            Player's Grid 
+   --------------------------------- */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.player{
+    margin: 5%;
+    margin-left: 5%;
+    padding-left: 4%;
+    padding-top: 4%;
+      
+}
+/* Adding shadow  */
+
+.box-shadow{
+    border-radius: 0;
+    box-shadow: .1px .1px 10px #b8b0b0 ;
+
+}
+.player img{
+    width: 330px;
+    text-decoration: wrap;
+    
+}
+.player h1{
+       font-size: 24px;
+       font-weight: 700;
+}
+.player p {
+       color: #6C6C6C;
+       text-align: justify;
+       text-justify: inter-word;
+       padding-right: 5%;
+}
+   
+/*-------------------------------
+     Login and Signup
+------------------------- */
+.reg-header{
+    margin-top: 5%;
+    text-align: center;
+}
+.credentials{
+    display: flex;
+    margin-top: 5%;
+    background-color: rgba(0, 255, 255, 0.377);
+    padding-top: 2% ;
+    padding-bottom: 2%;
+    
+}
+.reg, .log{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    border: 5px solid rgba(65, 60, 60, 0.596);
+    padding: 2.5%;
+    
+}
+.reg p, .log p{
+    font-size: 25px;
+    font-weight: 700px
+    ;
+}
+
+/*-------------------------------------------
+         Notification system
+--------------------------------- */
+.notify-area{
+    display: flex;
+    flex-direction: column;
+}
+.notify-header{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.notify-button{
+    margin-top: 10%;
+    margin-bottom: 0px;
+}
+button{
+    margin: 0px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+/* ---------------------------------------
+    Adding the style of end banner and icons 
+-------------------------------------- */
+.last-banner{
+    display: flex;
+    justify-content: center;
+    height: 110px;
+}
+
+/* adding style for icons  */
+.icons{
+    text-align: center;
+}
+
+/* Adding footer style */
+footer{
+    text-align: center;
+}
+
+/*----------------
+ Media Queries 
+ ------------------*/
+
+ /* Mobile  */
+
+@media only screen and (max-height:688px) {
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    
+    
+    
+    
+}  
+.banner-info h1{
+    margin: 0px;
+    margin-top: 20%;
+    font-size: 80%;
+    line-height: 80px;
+}
+.banner-img{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    grid-template-columns: repeat(1, 1fr);
+}
+.player{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    margin: 0px;
+    margin-top: 8%;
+}
+    
+}
